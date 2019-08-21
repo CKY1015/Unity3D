@@ -1,0 +1,27 @@
+Release Notes 2.5.4 : 22-11-2013 
+
+
+New:
+- A new option "Tangents" has been added to the General Settings tab in the Inspector. This will automatically calculate mesh tangent data which is required when you using bumped shader on the road. Alternatively you could also use the newly added "Calculate Tangents" button in the Inspector after clicking the middle tab to process the terrain.
+- A button "Finalize Object" is now available in the Inspector after clicking the middle tab to process the terrain. This process does the same as "Build EasyRoads3D Objects" from the main EasyRoads3D Menu but only for this road object. It will unlink the road mesh from the EasyRoads3D object, rename it to the same name as the EasyRoads3D object and destroy the EasyRoads3D editor object.Check the manual for more info.
+- The EasyRoads3D menu is now loacted in GameObject > Create Other > EasyRoads3D
+
+Improvements:
+- terrain texture info is now updated every time after you select a road object in the scene.
+- Multiple Terrains: Ctrl+Alt+Click this will automatcially set the clicked terrain as the selected terrain in the Multiple Terrains dropdown in "General Settings".
+
+
+Fixes:
+- Blank road textures in the Texture window when using version control in a Unity project.
+- Procedural side objects Mesh triangulation issues with iOS Platform enabled in General Settings and using Clamp left or Clamp Right as the Controller type in the Side Object Manager 
+- Unity 4.3 obsolete code warnings
+- Console errors and issues when building for Phone 8 on Windows 8 
+
+Install Notes:
+
+To install this update in an existing EasyRoads3D project it is recommended to follow the next steps:
+
+1. Open a new scene.
+2. Remove all the folders and scripts in the folder /Assets/EasyRoads3D/ except sideobjectsLog.er3dObjects . sideobjectsLog.er3dObjects contains all side objects data, do not delete it!
+3. Import the new package
+4. Open your scene.
